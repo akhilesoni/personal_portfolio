@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="background">
+  <div id='heading'>
+      <h1>Hi, I'm Akhlesh Soni</h1>
+      <p><i class="material-icons" style="font-size: 17px;">&#xe55f</i>Bhilai, IN</p>
+  </div>
+  
+  
+     <div id="display_picture">
+         <img src="{% static 'profile.jpeg' %}" id="profile" height="150px" width="150px">
+     </div>
+     <div id="social">
+      <div class='media'><a href="https://www.instagram.com/akhilesoni/"><img class="account" src="{% static 'instagram1.png' %}"  height="50px" width="50px"></a></div>
+      <div class='media'><a href="https://github.com/akhilesoni"><img class="account" src="{% static 'github1.png' %}"  height="50px" width="50px"></a></div>
+      <div class='media'><a href="https://www.facebook.com/akhilesh.soni.75873"><img class="account" src="{% static 'facebook1.png' %}"  height="50px" width="50px"></a></div>
+      <div class='media'><a href="https://twitter.com/Akhilesoni"><img class="account" src="{% static 'twitter2.jpg' %}"  height="50px" width="50px"></a></div>
+      <div class='media'><a href="https://www.linkedin.com/in/akhlesh-soni-590b46187/"><img class="account" src="{% static 'linkedin1.jpg' %}"  height="50px" width="50px"></a></div>
+     </div>
+     <div class="content">   
+  
+        <p>&#60;I'm a student, a freelancer and a coding geek.
+            <br>
+            I've learnt everything from internet not from my collage.
+            <br>
+            A powerful online presence plays a huge role in bringing new opportunities
+            <br> to your door. Since launching Learn to Code With Me and putting work 
+            <br> into maintaining an online presence&#62;
+            <br>
+       </p>
+
+     </div>
+  </div>   
+ 
+  <div id='skill'>    
+     
+      <div class='logo'><img src="{% static 'c.jpg' %}"  height="80px" width="80px"></div>
+      <div class='logo'><img src="{% static 'cpp.jpg' %}"  height="80px" width="80px"></div>
+      <div class='logo'><img src="{% static 'flask.jpg' %}"  height="80px" width="80px"></div>
+      <div class='logo'><img src="{% static 'react.jpg' %}"  height="80px" width="80px"></div>
+      <div class='logo'><img src="{% static 'python.jpg' %}"  height="80px" width="80px"></div>
+      <div class='logo'><img src="{% static 'postgres.jpg' %}"  height="80px" width="80px"></div>
+      <div class='logo'><img src="{% static 'javascript.png' %}"  height="80px" width="80px"></div>
+      <div class='logo'><img src="{% static 'css.png' %}"  height="80px" width="80px"></div>
+      <div class='logo'><img src="{% static 'django1.png' %}"  height="80px" width="80px"></div>
+      <div class='logo'><img src="{% static 'html.png' %}"  height="80px" width="80px"></div>
+
+  </div>
+
+  <div id="projects">
+      <div class="project">
+          <img src="{%static 'blog1.jpg'%}"  height="150px">
+          <div class="link">
+             <h2>blog</h2>
+          </div>
+      </div>
+      <div class="project">
+          <img src="{% static 'game1.png'%}"  height="150px">
+          <div class="link">
+             <h2>game</h2>
+          </div>
+      </div>
+      <div class="project">
+          <img src="{%static 'clone1.jpg'%}"  height="150px">
+          <div class="link">
+             <h2>game</h2>
+          </div>
+      </div>
+      <div class="project">
+          <img src="{%static 'calculator1.jpg'%}"  height="150px">
+          <div class="link">
+             <h2>game</h2>
+          </div>
+      </div>
+     
+     
+  </div>
+
+  <div id="contact">
+      <form id="box" action="/thanks/" method="POST">
+          <input class="input" name="name" type="text" placeholder="Your Name" required>
+
+          <input class="input" name="message" type="text" placeholder="Type Something.." required>
+
+          <input class="input" name="email" type="email" placeholder="E-Mail" required>
+          <input type="submit" value="Submit">
+      </form>
+
+      <p style="color: rgb(218, 216, 216); text-align: center; margin: 10px;">&#169&#8491kh&#8505l&#8495sh S&#8500;n&#8505&#8482</p>
+  </div>
+
+
+{% endblock %}

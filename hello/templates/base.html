@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>akhlesoni</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+             box-sizing: border-box;
+             font-family: Arial, Helvetica, sans-serif  ;
+             margin: 0px;
+             }
+           .content{
+               padding: 5%;
+               color: rgb(255, 255, 255);
+               font-size:x-large;
+               text-shadow: 2px 2px #726c6c;
+               text-align: center;
+           }
+           #heading{
+
+               padding: 20px;
+               padding-bottom: 0px;
+               color: white;
+               text-shadow: 2px 2px #585656;
+           }
+           #display_picture{
+               padding: 3%;
+               text-align: center;
+
+           }
+           #profile{
+            text-align: center;
+               border-radius: 50%;
+           }
+           #social{
+            text-align: center;
+               display: flex;
+              flex-wrap: wrap;
+              padding: 3%x;
+              align-items: center;
+              justify-content: center;
+           }
+           .logo, .media{
+               margin: 20px;
+               text-align: center;
+
+           }
+           .account{
+               border-radius: 50%;
+               text-align: center;
+           }
+           #skill{
+            display: flex;
+              flex-wrap: wrap;
+              padding: 3%;
+              align-items: center;
+              justify-content: center;
+              background-color: #f5f5f5;
+              text-align: center;
+           }
+           #projects{
+            display: flex;
+              flex-wrap: wrap;
+              padding: 3%;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              border-top: 2px dotted black ;
+              
+           }
+           .project{
+            box-shadow: 3px 7px 15px #dad8d8;
+            text-align: center;
+            margin: 20px;
+            border-radius: 8px;
+
+           }
+           #background{
+               background-image: url('static/main.jpg');
+              
+           }
+           .link{
+               padding: 5px;
+               text-align: center;
+           }
+           #contact{
+               padding: 4%;
+               background-color: rgb(123, 70, 128);
+               color: #f5f5f5;
+               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           }
+           input[type=email], input[type=text], select{
+               display: inline-block;
+               width: 100%;
+               padding: 10px 12px;
+               margin: 8px 0px;
+               box-sizing: border-box;
+               background-color: rgb(238, 238, 238);
+               height: 50px;
+               border: 0px;
+               border-radius: 6px;
+               font-size: medium;
+               color: #414040;
+              
+               
+           }
+           input[type=email]:hover,input[type=text]:hover{
+                border-bottom: 3px solid white;
+                
+            }
+            input[type=email]:focus,input[type=text]:focus{
+                border: 0px;
+            }
+            input[type=submit], select{
+                width: 100%;
+                background-color: rgb(53, 154, 194);
+                padding: 13px 12px;
+                margin: 12px 0px;
+                border-radius: 6px;
+                font-size: larger;
+                color: white;
+                box-shadow: 2px 5px 10px rgb(66, 66, 66);;
+                transition: 0.5s;
+                margin-top: 10px;
+                border: 0px;
+            }
+            input[type=submit]:hover{
+                background-color: rgb(47, 129, 161);
+            }
+            
+            input[type=submit]:focus{
+                background-color: rgb(68, 68, 68);
+            }
+            #thanks{
+                padding: 10%;
+                text-align: center;
+                border-radius: 20px;
+                border: 3px dotted black;
+                margin: 10%;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #box{
+                margin: auto;
+                max-width: 460px;
+            }
+
+            
+           
+        </style>
+    </head>
+    <body>
+      {% block content %}{% endblock %}
+    </body>
+</html>
